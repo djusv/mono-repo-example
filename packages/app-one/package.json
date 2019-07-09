@@ -1,0 +1,27 @@
+{
+  "name": "app-one",
+  "version": "0.0.0",
+  "description": "App One",
+  "author": {
+    "name": "Justin Verkuijl",
+    "url": "https://github.com/djusv"
+  },
+  "license": "MIT",
+  "main": "/src/index.js",
+  "scripts": {
+    "test": "cross-env NODE_ENV=test jest --coverage --runInBand",
+    "test:watch": "cross-env NODE_ENV=test jest --watchAll --runInBand",
+    "lint": "npm run lint:js && npm run lint:css",
+    "lint:js": "eslint ./src/**/*.js",
+    "lint:css": "stylelint ./src/styles/**/*.scss",
+    "build:prod": "cross-env NODE_ENV=production webpack",
+    "build:dev": "cross-env NODE_ENV=development webpack",
+    "build:ci": "npm run lint && npm run test && npm run build:prod",
+    "start": "cross-env NODE_ENV=development webpack-dev-server --open --mode development",
+    "webpack:stats": "webpack --mode production --profile --json > stats.json"
+  },
+  "dependencies": {
+    "angular": "1.7.8",
+    "core-js": "3.1.4"
+  }
+}

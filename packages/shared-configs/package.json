@@ -1,0 +1,15 @@
+{
+  "name": "shared-configs",
+  "version": "0.0.0",
+  "description": "Tools package contains reuseable configurations for other packages",
+  "author": {
+    "name": "Justin Verkuijl",
+    "url": "https://github.com/djusv"
+  },
+  "private": true,
+  "license": "MIT",
+  "scripts": {
+    "lint": "npm run lint:js",
+    "lint:js": "eslint ./**/*.js"
+  }
+}

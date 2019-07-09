@@ -1,0 +1,74 @@
+{
+  "name": "mono-repo-example",
+  "description": "Sample repository showing integration of AngularJS 1.7, webpack 4, babel 7.5, Lerna and Jest",
+  "author": {
+    "name": "Justin Verkuijl",
+    "url": "https://github.com/djusv"
+  },
+  "license": "MIT",
+  "keywords": [
+    "AngularJS",
+    "es6",
+    "boilerplate",
+    "webpack",
+    "jest",
+    "eslint",
+    "babel",
+    "lerna",
+    "sass",
+    "ESLint"
+  ],
+  "engines": {
+    "node": ">=8.12.0"
+  },
+  "scripts": {
+    "lint": "lerna run lint",
+    "build": "lerna run build:prod",
+    "test": "jest --coverage --runInBand"
+  },
+  "devDependencies": {
+    "@babel/core": "7.5.0",
+    "@babel/preset-env": "7.5.2",
+    "angular-mocks": "1.7.8",
+    "angularjs-jest": "0.1.4",
+    "babel-eslint": "10.0.2",
+    "babel-jest": "24.8.0",
+    "babel-loader": "8.0.6",
+    "babel-plugin-angularjs-annotate": "0.10.0",
+    "clean-webpack-plugin": "3.0.0",
+    "cross-env": "5.2.0",
+    "css-loader": "3.0.0",
+    "eslint": "6.0.1",
+    "eslint-loader": "2.2.1",
+    "eslint-plugin-angular": "^4.0.1",
+    "eslint-plugin-compat": "3.2.0",
+    "eslint-plugin-jest": "22.7.2",
+    "file-loader": "4.0.0",
+    "html-loader": "0.5.5",
+    "html-loader-jest": "0.2.1",
+    "html-webpack-plugin": "3.2.0",
+    "jest": "24.8.0",
+    "jest-junit": "6.4.0",
+    "lerna": "3.15.0",
+    "mini-css-extract-plugin": "0.7.0",
+    "node-sass": "4.12.0",
+    "optimize-css-assets-webpack-plugin": "5.0.3",
+    "regenerator-runtime": "0.13.2",
+    "sass-loader": "7.1.0",
+    "stylelint": "10.1.0",
+    "stylelint-bare-webpack-plugin": "1.1.1",
+    "stylelint-config-recommended": "^2.2.0",
+    "stylelint-no-unsupported-browser-features": "3.0.2",
+    "stylelint-scss": "3.9.0",
+    "url-loader": "2.0.1",
+    "webpack": "4.35.3",
+    "webpack-cli": "3.3.5",
+    "webpack-dev-server": "3.7.2"
+  },
+  "dependencies": {
+    "app-one": "file:packages\\app-one",
+    "app-two": "file:packages\\app-two",
+    "shared": "file:packages\\shared",
+    "shared-configs": "file:packages\\shared-configs"
+  }
+}
